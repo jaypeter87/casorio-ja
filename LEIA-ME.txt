@@ -1,0 +1,62 @@
+CONVITE ANDREIA & JOÃO — COMO PUBLICAR
+======================================
+
+O QUE ESTÁ NESTA PASTA
+- index.html  -> o convite (tudo num só ficheiro)
+- og.jpg      -> imagem que aparece quando o link é partilhado (WhatsApp, etc.)
+- _headers    -> pede aos motores de busca para não indexarem a página
+                 (funciona no Cloudflare Pages e no Netlify; no GitHub Pages
+                 é ignorado, mas a página já tem a mesma indicação no código)
+
+PASSO 1 — DEFINIR O TEU DOMÍNIO (obrigatório, 1 minuto)
+Abre o index.html com o Bloco de Notas (ou qualquer editor de texto), procura
+O-TEU-DOMINIO.pt (aparece 2 vezes, no topo) e troca pelo teu domínio real,
+por exemplo: joaoeandreia.pt
+Sem isto, o link partilhado não mostra a imagem de pré-visualização.
+
+PASSO 2 — ESCOLHER ONDE PUBLICAR (todas são gratuitas)
+
+A) Cloudflare Pages (recomendado)
+   1. Cria conta em cloudflare.com -> Workers & Pages -> Create -> Pages
+      -> Upload assets.
+   2. Dá um nome ao projeto e arrasta esta pasta inteira. Clica Deploy.
+   3. Separador Custom domains -> Set up a custom domain -> escreve o teu
+      domínio e segue as instruções de DNS que a Cloudflare mostrar.
+
+B) Netlify
+   1. Cria conta em netlify.com -> Add new site -> Deploy manually.
+   2. Arrasta esta pasta inteira.
+   3. Domain management -> Add a domain -> segue as instruções de DNS.
+
+C) GitHub Pages
+   1. Cria um repositório novo e carrega estes ficheiros (o index.html tem de
+      ficar na raiz).
+   2. Settings -> Pages -> escolhe a branch main e a pasta / (root).
+   3. Em Custom domain escreve o teu domínio.
+   4. No DNS do teu registador cria 4 registos A para o domínio principal:
+      185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
+      e um CNAME "www" a apontar para <o-teu-utilizador>.github.io
+
+(Os nomes dos menus podem variar ligeiramente; o essencial é igual em todas.)
+
+PASSO 3 — APONTAR O DOMÍNIO
+No painel do teu registador (onde compraste o .pt), cria os registos DNS que a
+plataforma escolhida indicar. Pode demorar de minutos a poucas horas. O
+certificado HTTPS é emitido automaticamente.
+
+PASSO 4 — TESTAR ANTES DE ENVIAR
+- Abre o link no telemóvel e percorre os 4 vinis até ao fim.
+- Toca em "Adicionar ao calendário", "Como chegar" e nos dois botões de
+  confirmação (devem abrir o WhatsApp com a mensagem escrita).
+- Envia o link a ti próprio no WhatsApp e confirma que aparece a imagem.
+  Se não aparecer, espera uns minutos ou acrescenta ?v=2 ao fim do link
+  (o WhatsApp guarda pré-visualizações antigas).
+
+CONFIRMA ANTES DE PUBLICAR
+- "Como chegar" abre uma pesquisa por "Igreja dos Pousos Leiria". Confirma que
+  é o sítio certo (se quiseres, troca o link no index.html pelo do Google Maps
+  da morada exata).
+- Os rótulos "Cerimónia" (igreja) e "Festa" (quinta) foram escolhidos por nós;
+  ajusta se for diferente.
+- Telefones nos botões de confirmação: João 912 358 652 e Andreia 914 962 744.
+- Data limite de confirmação mostrada: 15.05.2027.
